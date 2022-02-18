@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<plugin id="Gnumeric_MyFuncPlugin">
+    <information>
+        <name>Other Python functions from HOWTO</name>
+        <description>A few extra python functions demonstrating the API.</description>
+    </information>
+    <loader type="Gnumeric_PythonLoader:python">
+        <attribute name="module_name" value="plugin_functions"/>
+    </loader>
+    <services>
+        <service type="function_group" id="amir">
+            <category>Local Python</category>
+            <functions>
+                <function name="py_ghost_add"/>
+                <function name="py_ghost_control"/>
+                <function name="py_true_random"/>
+                <function name="py_signed_true_random"/>
+                <function name="py_series_sum"/>
+                <function name="py_iban_validate"/>
+                <function name="py_iban_bank_code"/>
+                <function name="py_iban_branch_code"/>
+                <function name="py_iban_account_number"/>
+            </functions>
+        </service>
+    </services>
+</plugin>
