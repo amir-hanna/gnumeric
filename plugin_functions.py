@@ -1,4 +1,6 @@
 # Script is written in Python 2.x to work with my version of Gnumeric
+# the name of this file must match the value in the plugin.xml file adding .py at the end 
+
 from xml.etree.ElementTree import tostring
 from Gnumeric import GnumericError, GnumericErrorVALUE
 import Gnumeric
@@ -290,6 +292,8 @@ def func_series_sum (first_value, current_value, first_position, current_positio
 
 
 # Translate the python functions to gnumeric functions and register them
+# the name of the dictionary variable must start with the id value in the plugin.xml file
+
 amir_functions = {
     'py_ghost_add': ('rrrr', 'cell1, cell2, value_cell, control_cell', ghost_add),
     'py_ghost_control': ('rrsrs', 'cell1, cell2, str_concat, value_cell, str_value_command', ghost_control),
