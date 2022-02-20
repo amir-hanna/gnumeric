@@ -5,7 +5,7 @@ Installing the gnumeric-plugins-extra package allows you to write user defined f
 
 You can also just modify and import the functions and use them in your program as you desire with the exception of the gnumeric specific functions.
 
-All packages must be installed before hand. If there are errors in the python module because of packages or otherwise, Gnumeric will throw a general error which is: Function implementation not available.
+All packages must be installed before hand. If there are errors in the python module because of packages or otherwise, or the naming conventions of attributes in the xml file are not respected, this will result in Gnumeric throwing a general error which is: Function implementation not available.
 
 You need to install:
   gnumeric-plugins-extra (e.g. using apt in Ubuntu)
